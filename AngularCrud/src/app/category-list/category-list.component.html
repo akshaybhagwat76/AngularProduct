@@ -1,0 +1,6 @@
+<h4>Categories</h4>
+<ul class="list-group" style="width:250px;">
+  <li *ngFor="let cat of categories" class="list-group-item"> 
+    <label><input checked (change)="updateGrid($event, cat.id)" type="checkbox"> &nbsp;<span>{{cat.categoryname}}</span></label>
+  </li>
+</ul>

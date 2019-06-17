@@ -1,0 +1,8 @@
+<label class="control-label col-sm-offset-2 col-sm-2" for="company">Status</label>
+<div class="col-sm-2">
+  <select id="company" class="form-control" (change)="changechild($event.target.value)">
+    <option value="All">Select</option>
+    <option value="true">Active</option>
+    <option value="false">Inactive</option>
+  </select>
+</div>
